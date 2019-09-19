@@ -4,21 +4,21 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <button className="navbar-toggler" type="button"
+          data-togler="collapse" data-targer="#navbarMainToggler"
+          aria-controls="navbarMainToggler" aria-expanded="false"
+          aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        <a className="navbar-brand" href="#"><i class="fas fa-stroopwafel"></i>&nbsp;DeveloperDeck01 </a>
+        <div className="navbar-nav">
+          <a className="nav-item nav-link" href="https://uol.com.br">Home</a>
+          <a className="nav-item nav-link" href="https://uol.com.br">Channel</a>
+          <a className="nav-item nav-link" href="https://uol.com.br">Login</a>
+        </div>
+      </nav>
     </div>
   );
 }
